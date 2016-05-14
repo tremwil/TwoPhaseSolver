@@ -48,7 +48,17 @@ namespace TwoPhaseSolver
 
         public static Move fullSolve(Cube cube, int maxDepth, int timeoutMS = 6000, bool printInfo = false)
         {
-            if (cube.isSolved()) { return Move.None; }
+            if (printInfo)
+                Tools.ColorPrint(
+                    string.Format("SOLVER START, MAX DEPTH {0}, TIME ALLOWED {1}MS\n\n", maxDepth, timeoutMS), 
+                    ConsoleColor.Cyan
+                );
+
+            if (cube.isSolved())
+            {
+                if (printInfo) Tools.ColorPrint("CUBE ALREADY SOLVED... MAKE IT HARDER NEXT TIME\n", ConsoleColor.Cyan);
+                return Move.None;
+            }
 
             ax[0] = 0;
             po[0] = 0;

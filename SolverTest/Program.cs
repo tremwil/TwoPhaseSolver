@@ -16,8 +16,7 @@ namespace SolverTest
             Move pattern;
 
             // BEST RANDOM GEN. EVER. (actually not that bad,
-            // since you'd have to time yourself with ~1microsecond
-            // precison)
+            // since you'd have to time yourself with 100nanosecond precision
             if ((DateTime.Now.Ticks & 1) == 0)
             {
                 pattern = Move.None;

@@ -1,7 +1,7 @@
 # TwoPhaseSolver
 Kociemba's algorithm implementation in C#. 
 
-I originaly made for a Mindstorms EV3 cube-solving robot, but it can be used in any situation. Note that I do not have any real experience in coding well, so the code is pretty much a mess without comments. It can still be used very well.
+I originaly made it for a Mindstorms EV3 cube-solving robot, but it can be used in any situation. Note that I do not have any real experience in coding well, so the code is pretty much a mess without comments. I might add some documentation later on.
 
 # Building
 Simply open the solution in VisualStudio and hit "Build Solution". The "TwoPhaseSolver.dll" library and a test application named "SolverTest.exe" should be created. 

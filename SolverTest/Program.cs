@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TwoPhaseSolver;
 
 namespace SolverTest
@@ -15,7 +11,7 @@ namespace SolverTest
             Cube c = Move.randmove(200).apply(new Cube());
             Move pattern;
 
-            // BEST RANDOM GEN. EVER. (actually not that bad,
+            // BEST. RANDOM. GEN. EVER. (actually not that bad,
             // since you'd have to time yourself with 100nanosecond precision
             if ((DateTime.Now.Ticks & 1) == 0)
             {
